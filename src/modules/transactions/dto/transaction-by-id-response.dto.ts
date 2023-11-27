@@ -15,10 +15,10 @@ export class TransactionByIdResponseDTO {
   @Field({ description: "transaction's status information" })
   transactionStatus: NamedEntityDTO;
 
-  @Field((type) => Float, { description: "transaction's amount" })
+  @Field((_) => Float, { description: "transaction's amount" })
   value: number;
 
-  @Field((type) => String, { description: "transaction's creating date" })
+  @Field((_) => String, { description: "transaction's creating date" })
   createdAt: string;
 
   constructor(
